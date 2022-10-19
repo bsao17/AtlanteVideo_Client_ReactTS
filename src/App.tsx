@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FunctionComponent} from 'react';
+import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
+import {About, Home, Product} from "./components";
 
-function App() {
+
+const App: FunctionComponent = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+            <ul className="flex flex-row justify-around">
+                <Link to="/home">Accueil</Link>
+                <Link to="/about">A propos</Link>
+                <Link to="/product">Services & produits</Link>
+            </ul>
+            <Routes>
+                <Route path="/home" element={<Home/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="product" element={<Product/>}/>
+            </Routes>
+        </Router>
     </div>
   );
 }
