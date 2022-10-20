@@ -5,9 +5,9 @@ import {About, Home, Product} from "./components";
 
 const App: FunctionComponent = () => {
   return (
-    <div className="App">
+    <div className="App bg-black">
         <Router>
-            <ul className="flex flex-row justify-around">
+            <ul className="flex flex-row justify-around p-5">
                 <Link to="/home">Accueil</Link>
                 <Link to="/about">A propos</Link>
                 <Link to="/product">Services & produits</Link>
