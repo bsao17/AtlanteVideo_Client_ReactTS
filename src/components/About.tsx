@@ -1,9 +1,10 @@
+import TitleCard from "../__TEST__/titleCard/TitleCard";
 
 
 const About = ()=>{
     return(
-        <div className="container" style={{backgroundColor: "#222425"}}>
-            <h1 className="w-full text-2xl text-center text-white p-9 border-8 border-x-gray-700 border-y-gray-500">A propos</h1>
+        <div>
+            <TitleCard title={"Historique et projets d'Atlante-Production"}/>
         </div>
     )
 }
