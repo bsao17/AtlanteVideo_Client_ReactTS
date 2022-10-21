@@ -1,10 +1,10 @@
-import TitleCard from "./TitleCard";
+import TitleCard from "../__TEST__/titleCard/TitleCard";
 
 
 const About = ()=>{
     return(
         <div>
-            <TitleCard title={"A propos"}/>
+            <TitleCard title={"Historique et projets d'Atlante-Production"}/>
         </div>
     )
 }

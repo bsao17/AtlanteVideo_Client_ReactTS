@@ -3,7 +3,8 @@ const TitleCard = ({title}: {title: string}) => {
     return (
         <div>
             <h1 className="
-            w-full text-6xl
+            w-full
+            text-4xl
             text-center
             text-white
             p-7
