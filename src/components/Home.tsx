@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-import TitleCard from "./TitleCard";
-
+import TitleCard from "../__TEST__/titleCard/TitleCard";
 
 function Home() {
     return (
         <div>
-            <TitleCard title="Accueil"/>
+            <TitleCard title="Atlante-Video-Production"/>
             <img src={logo} className="App-logo" alt="logo" />
         </div>
     );
