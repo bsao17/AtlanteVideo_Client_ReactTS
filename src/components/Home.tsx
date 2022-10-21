@@ -20,11 +20,11 @@ function Home() {
             sm:visible
             lg:visible
             ">
-                <div className="col-span-1 flex justify-center">
-                    <img src={home_presentation_anafi} className="" alt="logo" />
+                <div className="col-span-1 flex justify-center hover:border border-white hover:rounded-full">
+                    <img src={home_presentation_anafi} className="pt-16 hover:bg-cyan-900 rounded-full" alt="logo" />
                 </div>
-                <div className="col-span-2 flex justify-center">
-                    <img src={home_presentation_dji} className="" alt="logo" />
+                <div className="col-span-2 flex justify-center hover:border border-white rounded-full">
+                    <img src={home_presentation_dji} className="hover:bg-cyan-900 rounded-full" alt="logo" />
                 </div>
             </div>
         </>
