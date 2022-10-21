@@ -1,7 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
-import {About, Home, Product} from "./components";
-import Footer from "./components/footer/Footer";
+import {About, Home, Product, Footer} from "./components";
 
 
 const App: FunctionComponent = () => {
