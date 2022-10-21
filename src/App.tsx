@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 import {About, Home, Product} from "./components";
+import Footer from "./components/footer/Footer";
 
 
 const App: FunctionComponent = () => {
@@ -18,6 +19,7 @@ const App: FunctionComponent = () => {
                 <Route path="product" element={<Product/>}/>
             </Routes>
         </Router>
+        <Footer/>
     </div>
   );
 }
