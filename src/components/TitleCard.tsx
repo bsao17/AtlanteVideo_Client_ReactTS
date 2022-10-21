@@ -4,11 +4,11 @@ const TitleCard = ({title}: {title: string}) => {
         <div>
             <h1 className="
             w-full
-            text-4xl
+            text-3xl
             text-center
             text-white
-            p-7
-            border-y-8
+            p-4
+            border-y-4
             border-y-gray-500
             bg-neutral-900
             hover:bg-neutral-800

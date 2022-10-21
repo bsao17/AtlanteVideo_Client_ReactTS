@@ -1,4 +1,4 @@
-import TitleCard from "../__TEST__/titleCard/TitleCard";
+import TitleCard from "./TitleCard";
 import {FunctionComponent} from "react";
 
 
