@@ -8,11 +8,9 @@ const TitleCard = ({title}: {title: string}) => {
             text-center
             text-white
             p-4
-            border-y-4
-            border-y-gray-500
+            border-b-4
+            border-b-gray-500
             bg-neutral-900
-            hover:bg-neutral-800
-            hover:border-y-gray-400
             font-serif"
             >
                 {title}
