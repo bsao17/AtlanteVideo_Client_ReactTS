@@ -1,7 +1,7 @@
 import {createContext} from "react";
 
 const droneParts = {
-    droneName: "Exemple de videos",
+    title: "Exemple de videos",
     droneType: "Racer",
     price: 1290
 }
