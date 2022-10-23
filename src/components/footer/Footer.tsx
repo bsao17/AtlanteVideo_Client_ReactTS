@@ -5,7 +5,7 @@ import {FunctionComponent} from "react";
 const Footer: FunctionComponent = () => {
     return (
         <div className={styles.container}>
-            <img className="w-full h-52 m-0 fixed bottom-0" src={sea_footer_image} alt="sea footer"/>
+            <img className="w-full h-52 m-0 bottom-0" src={sea_footer_image} alt="sea footer"/>
         </div>
     )
 }
