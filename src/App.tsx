@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {About, Home, Product, VideoGrid} from "./pages"
+import {About, Home, Product, Signin, VideoGrid} from "./pages"
 import {Navigation, Footer} from "./components";
 
 
@@ -14,6 +14,7 @@ const App: FunctionComponent = () => {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/product" element={<Product/>}/>
                 <Route path="/video" element={<VideoGrid/>}/>
+                <Route path="/signin" element={<Signin/>}/>
             </Routes>
         </Router>
         <Footer/>
