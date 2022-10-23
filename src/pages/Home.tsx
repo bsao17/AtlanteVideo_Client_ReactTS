@@ -18,18 +18,17 @@ function Home() {
             mx-24
             ">
                 <div className="mb-28 flex flex-col justify-center items-center">
-                    <a href="src/pages/Home">
+                    <Link to="/video">
                         <img src={home_presentation_anafi} className="hidden md:block sm:block xl:block pt-4 hover:opacity-50  z-10" alt="logo"/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="col-span-2 flex justify-center rounded-full">
-                    <Link to="www.google.fr">
+                    <Link to="">
                         <img src={home_presentation_dji} className="hidden md:block sm:block xl:block pt-4 hover:opacity-50 z-10" alt="logo" />
                     </Link>
                 </div>
             </div>
         </>
-
     );
 }
 
