@@ -7,7 +7,7 @@ const Product: FunctionComponent = ()=>{
         <div>
             <TitleCard title="Détail des prestations d'Atlante-Production"/>
         </div>
-    )
-}
+    );
+};
 
 export default Product;

@@ -6,7 +6,7 @@ const VideoGrid = () => {
             <TitleCard title="Portfolio Video"/>
             <h1>Vidéo Grid</h1>
         </>
-    )
-}
+    );
+};
 
 export default VideoGrid;
