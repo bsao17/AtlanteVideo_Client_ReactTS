@@ -10,7 +10,7 @@ const About: FunctionComponent = ()=>{
                 <SetProfile/>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default About;

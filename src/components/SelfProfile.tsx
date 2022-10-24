@@ -1,4 +1,4 @@
-import profile from "../assets/profile.png"
+import profile from "../assets/profile.png";
 
 const SelfProfile = () => {
     return (
@@ -18,7 +18,7 @@ const SelfProfile = () => {
                 </p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default SelfProfile;

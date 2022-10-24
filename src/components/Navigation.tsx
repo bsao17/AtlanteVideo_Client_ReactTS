@@ -87,7 +87,7 @@ const Navigation = () => {
                 </Link>
             </ul>
         </div>
-    )
-}
+    );
+};
 
 export default Navigation;

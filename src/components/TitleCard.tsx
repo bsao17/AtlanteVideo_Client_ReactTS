@@ -1,4 +1,4 @@
-// Card de présentation du titre du composant
+
 const TitleCard = ({title}: {title: string}) => {
     return (
         <div>
@@ -16,7 +16,7 @@ const TitleCard = ({title}: {title: string}) => {
                 {title}
             </h1>
         </div>
-    )
-}
+    );
+};
 
 export default TitleCard;

@@ -7,7 +7,7 @@ const Footer: FunctionComponent = () => {
         <div className={styles.container}>
             <img className="w-full h-52 m-0 bottom-0" src={sea_footer_image} alt="sea footer"/>
         </div>
-    )
-}
+    );
+};
 
 export default Footer;
