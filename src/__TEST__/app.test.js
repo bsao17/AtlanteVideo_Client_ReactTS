@@ -1,4 +1,4 @@
-import appAsync from "./functions/appAsymc";
+import appAsync from "./mock/appAsymc";
 
 describe("test asynchronous function", ()=>{
     test("apiAsync function", (done)=>{

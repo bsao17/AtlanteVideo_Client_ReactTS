@@ -6,7 +6,7 @@ import {Navigation, Footer} from "./components";
 
 const App: FunctionComponent = () => {
     return (
-        <div className="App bg-neutral-800" style={{height: "100vh"}}>
+        <div className="App bg-neutral-800" style={{height: "100vh", backgroundColor: "#262626"}}>
             <Router>
                 <Navigation/>
                 <Routes>

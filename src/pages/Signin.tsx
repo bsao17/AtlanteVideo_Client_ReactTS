@@ -21,7 +21,7 @@ const Signin = () => {
                         <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
                             <form>
                                 <div className="flex flex-row items-center justify-center lg:justify-start">
-                                    <p className="text-lg mb-0 mr-4">Sign in with</p>
+                                    <p className="text-lg mb-0 mr-4 text-white ">Sign in with</p>
                                     <button
                                         type="button"
                                         data-mdb-ripple="true"
@@ -69,7 +69,7 @@ const Signin = () => {
                                 <div
                                     className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
                                 >
-                                    <p className="text-center font-semibold mx-4 mb-0">Or</p>
+                                    <p className="text-center font-semibold mx-4 mb-0 text-white ">Or</p>
                                 </div>
 
                                 <div className="mb-6">
@@ -97,12 +97,12 @@ const Signin = () => {
                                             className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                             id="exampleCheck2"
                                         />
-                                        <label className="form-check-label inline-block text-gray-800"
+                                        <label className="form-check-label inline-block text-gray-300"
                                             htmlFor="exampleCheck2"
                                         >Remember me</label
                                         >
                                     </div>
-                                    <a href="./" className="text-gray-800">Forgot password?</a>
+                                    <a href="./" className="text-gray-300">Forgot password?</a>
                                 </div>
 
                                 <div className="text-center lg:text-left">
@@ -112,11 +112,11 @@ const Signin = () => {
                                     >
                                     Login
                                     </button>
-                                    <p className="text-sm font-semibold mt-2 pt-1 mb-0">
-                                    Don't have an account?
+                                    <p className="text-sm font-semibold mt-2 pt-1 mb-0 text-white">
+                                    Don't have an account ?
                                         <a
                                             href="./"
-                                            className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                                            className="text-red-600 hover:text-red-700 focus:text-red-700 ml-5"
                                         >Register</a
                                         >
                                     </p>
