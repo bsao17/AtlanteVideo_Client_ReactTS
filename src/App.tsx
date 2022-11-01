@@ -1,17 +1,15 @@
 import React, {FunctionComponent, useState} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {About, Home, Product, Signin, VideoGrid} from "./pages";
-import {Navigation, Footer} from "./components";
-import NavigationResponsive from "./components/NavigationResponsive";
-import VerticaleResponsivveMenu from "./components/VerticaleResponsivveMenu";
+import {Navigation, NavigationResponsive, VerticaleResponsiveMenu, Footer} from "./components";
 
 
 const App: FunctionComponent = () => {
 
-    const [toggleNavigation, setToggleNavigation] = useState<boolean>(false);
+    const[toggleNavigation, setToggleNavigation] = useState(false);
 
     function handleNavigationbar(){
-        setToggleNavigation(true);
+        setToggleNavigation(!toggleNavigation);
         console.log(toggleNavigation);
     }
 
@@ -23,7 +21,7 @@ const App: FunctionComponent = () => {
         <div className="App bg-neutral-800" style={{ backgroundColor: "#262626"}}>
             <Router>
                 <NavigationResponsive handleNavigationBar={handleNavigationbar}/>
-                <VerticaleResponsivveMenu closed={closedMenu} status={toggleNavigation}/>
+                <VerticaleResponsiveMenu closed={closedMenu} status={toggleNavigation}/>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
