@@ -7,7 +7,7 @@ const activeBouton = "text-center px-6 py-2.5 bg-neutral-900 text-white font-med
 
 const Navigation = () => {
     return (
-        <div className=" w-full">
+        <div className=" w-full hidden sm:inline md:inline">
             <ul className="columns-4 flex flex-row justify-between md:justify-start text-blue-200">
                 <Link to="/" className={activeBouton}  >Accueil
                 </Link>

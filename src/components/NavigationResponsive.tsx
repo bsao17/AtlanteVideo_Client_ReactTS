@@ -1,16 +1,13 @@
-import {Link} from "react-router-dom";
 
 const NavigationResponsive = () => {
     return (
-        <div>
-            <select name="navigation" id="navigation">
-                <Link to="/" ><option value="accueil">Accueil</option></Link>
-                <Link to="/product" ><option value="product">Services et Produits</option></Link>
-                <Link to="/about" ><option value="about">A propos</option></Link>
-                <Link to="/signin" ><option value="signin">Login</option></Link>
-            </select>
+        <div className=" md:hidden sm:hidden lg:hidden p-3 cursor-pointer">
+            <div className="w-9 h-1 bg-white mb-2"/>
+            <div className="w-9 h-1 bg-white mb-2"/>
+            <div className="w-9 h-1 bg-white mb-2"/>
         </div>
     );
+
 };
 
 export default NavigationResponsive;

@@ -25,7 +25,7 @@ function Home() {
                         <figcaption className="flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">
                             Démos Videos
                         </figcaption>
-                        <img src={home_presentation_anafi} className="hidden md:block sm:block xl:block mt-9 pt-4  z-10" alt="logo"/>
+                        <img src={home_presentation_anafi} className="hidden sm:block md:block mt-9 pt-4  z-10" alt="logo"/>
                     </figure>
                 </Link>
 
@@ -37,7 +37,7 @@ function Home() {
                             <figcaption className="flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">
                                 example video
                             </figcaption>
-                            <img src={home_presentation_dji} className="hidden md:block sm:block xl:block mt-5 pt-4 hover:opacity-50 z-10" alt="logo" />
+                            <img src={home_presentation_dji} className="hidden sm:block md:block mt-5 pt-4 hover:opacity-50 z-10" alt="logo" />
                         </figure>
                     </Link>
                 </div>
