@@ -1,29 +1,15 @@
 import {Link} from "react-router-dom";
 import React from "react";
 
+const activeBouton = "text-center px-6 py-2.5 bg-neutral-900 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-neutral-900 ";
+// const inactiveBouton = "text-center px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase";
+
+
 const Navigation = () => {
     return (
-        <div className=" w-full">
+        <div className=" w-full hidden sm:inline md:inline">
             <ul className="columns-4 flex flex-row justify-between md:justify-start text-blue-200">
-                <Link to="/" className="
-                text-center
-                px-6
-                py-2.5
-                bg-neutral-800
-                text-white
-                font-medium
-                text-xs
-                leading-tight
-                uppercase
-                hover:bg-gray-700
-                focus:bg-neutral-900
-                focus:outline-none
-                focus:ring-0
-                active:bg-gray-800
-                transition
-                duration-150
-                ease-in-out
-                ">Accueil
+                <Link to="/" className={activeBouton}  >Accueil
                 </Link>
                 <Link to="/product" className="
                 text-center
