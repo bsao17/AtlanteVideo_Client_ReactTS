@@ -7,9 +7,10 @@ const invisible: string = "invisible sm:hidden md:hidden flex flex-col p-5 absol
 function VerticaleResponsivveMenu({closed, status}: {closed: MouseEventHandler, status: boolean}){
     return (
         <div className={status ? visible : invisible}>
-            <Link className="my-2 focus:bg-gray-700 w-full" onClick={closed} to="/">Accueil</Link>
-            <Link className="my-2 focus:bg-gray-700 w-full" onClick={closed} to="/product">Services et Produits</Link>
-            <Link className="my-2 focus:bg-gray-700 w-full" onClick={closed} to="/about">A propos</Link>
+            <Link className="my-2 hover:bg-gray-200 w-full" onClick={closed} to="/">Accueil</Link>
+            <Link className="my-2 hover:bg-gray-700 w-full" onClick={closed} to="/product">Services et Produits</Link>
+            <Link className="my-2 hover:bg-gray-700 w-full" onClick={closed} to="/about">A propos</Link>
+            <Link className="my-2 hover:bg-gray-700 w-full" onClick={closed} to="/signin">Connexion</Link>
         </div>
     );
 }
