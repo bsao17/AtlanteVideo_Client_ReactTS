@@ -18,16 +18,15 @@ function Home() {
             pt-9
             md:block
             rounded
-            mx-24
             ">
-                <Link to="/video">
+                <div className="cursor-pointer" onClick={()=>{window.location.assign("https://www.youtube.com/channel/UCnaW05fHVPXc6m1e9UaFaSA");}}>
                     <figure className="hover:opacity-50">
-                        <figcaption className="flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">
-                            Démos Videos
+                        <figcaption className=" flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">
+                            Chaine YouTube
                         </figcaption>
                         <img src={home_presentation_anafi} className="hidden sm:block md:block mt-9 pt-4  z-10" alt="logo"/>
                     </figure>
-                </Link>
+                </div>
 
                 <div className="mb-28 flex flex-col justify-center items-center">
                 </div>
