@@ -1,24 +1,17 @@
-import React, {FunctionComponent, useCallback, useState} from "react";
+import React, { FunctionComponent, useContext} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {About, Home, Product, Signin, VideoGrid} from "./pages";
 import {Navigation, NavigationResponsive, VerticaleResponsiveMenu, Footer} from "./components";
+import {Context} from "./context/Context";
 
 
 const App: FunctionComponent = () => {
-    const[toggleNavigation, setToggleNavigation] = useState(false);
-
-    const handleNavigationbar = useCallback(() => {
-        setToggleNavigation(!toggleNavigation);
-    }, [toggleNavigation]);
-
-    function closedMenu(){
-        setToggleNavigation(false);
-    }
+    const context = useContext(Context);
     return (
         <div className="App bg-neutral-800" style={{ backgroundColor: "#262626"}}>
             <Router>
-                <NavigationResponsive handleNavigationBar={handleNavigationbar}/>
-                <VerticaleResponsiveMenu closed={closedMenu} status={toggleNavigation}/>
+                <NavigationResponsive handleNavigationBar={context.handleNavigationbar}/>
+                <VerticaleResponsiveMenu closed={context.closedMenu} status={context.toggleNavigation}/>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
