@@ -1,28 +1,22 @@
-import {createContext, PropsWithChildren} from "react";
+import {createContext, useCallback, useState} from "react";
 
-export type dronePartsType = {
-    toggle: boolean,
-    handleToggle?: Function,
-    activeButton: string,
-    inactiveButton: string
-}
+export const Context = createContext({
+    closedMenu: ()=>{},
+    toggleNavigation: false,
+    handleNavigationbar: () => {}
+});
 
-export const droneParts: dronePartsType = {
-    toggle: true,
-    activeButton: "text-center px-6 py-2.5 bg-neutral-900 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-neutral-900 ",
-    inactiveButton: "text-center px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase"
-
-};
-
-export const Context = createContext({});
-
-const Provider = ({children}: {children: PropsWithChildren}) => {
+const ToggleProvider = ({children}: any) => {
+    const closedMenu = ()=>{ return setToggleNavigation(!toggleNavigation);};
+    const[toggleNavigation, setToggleNavigation] = useState(false);
+    const handleNavigationbar = useCallback(() => {
+        setToggleNavigation(!toggleNavigation);
+    }, [toggleNavigation]);
     return (
-        <Context.Provider value={droneParts}>
-            {/*@ts-ignore*/}
+        <Context.Provider value={{closedMenu, toggleNavigation, handleNavigationbar}}>
             <div>{children}</div>
         </Context.Provider>
     );
 };
 
-export default Provider;
+export default ToggleProvider;

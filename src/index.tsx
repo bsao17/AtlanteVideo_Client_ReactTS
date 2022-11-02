@@ -4,16 +4,16 @@ import "tw-elements";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Provider from "./context/Context";
+import ToggleProvider from "./context/Context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <Provider>
+        <ToggleProvider>
             <App/>
-        </Provider>
+        </ToggleProvider>
     </React.StrictMode>
 );
 
