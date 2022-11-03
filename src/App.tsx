@@ -1,17 +1,17 @@
-import React, { FunctionComponent, useContext} from "react";
+import React, { FunctionComponent} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {About, Home, Product, Signin, VideoGrid} from "./pages";
 import {Navigation, NavigationResponsive, VerticaleResponsiveMenu, Footer} from "./components";
-import {Context} from "./context/Context";
+import useToggleNavLink from "./hook/useToggleNavLink";
 
 
 const App: FunctionComponent = () => {
-    const context = useContext(Context);
+    const context = useToggleNavLink();
     return (
         <div className="App bg-neutral-800" style={{ backgroundColor: "#262626"}}>
             <Router>
                 <NavigationResponsive handleNavigationBar={context.handleNavigationbar}/>
-                <VerticaleResponsiveMenu closed={context.closedMenu} status={context.toggleNavigation}/>
+                <VerticaleResponsiveMenu closed={context.handleNavigationbar} status={context.toggleNavigation}/>
                 <Navigation/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
