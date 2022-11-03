@@ -4,7 +4,7 @@ import "tw-elements";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import ToggleProvider from "./context/Context";
+import {ToggleProvider} from "./context/Context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
