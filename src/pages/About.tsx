@@ -1,3 +1,4 @@
+import React from "react";
 import {TitleCard, SetProfile} from "../components";
 import {FunctionComponent} from "react";
 

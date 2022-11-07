@@ -1,9 +1,10 @@
+import React from "react";
 import {Link} from "react-router-dom";
 import {MouseEventHandler} from "react";
 import useToggleNavLink from "../hook/useToggleNavLink";
 
-const visible: string = "visible rounded-lg sm:hidden md:hidden flex flex-col p-5 absolute l-0 top-16 bg-black text-white shadow-2xl-white border border-gray-200 z-20";
-const invisible: string = "invisible sm:hidden md:hidden flex flex-col p-5 absolute l-0 top-16 bg-black text-white border border-3 border-gray-200 z-20";
+const visible = "visible rounded-lg sm:hidden md:hidden flex flex-col p-5 absolute l-0 top-16 bg-black text-white shadow-2xl-white border border-gray-200 z-20";
+const invisible = "invisible sm:hidden md:hidden flex flex-col p-5 absolute l-0 top-16 bg-black text-white border border-3 border-gray-200 z-20";
 
 function VerticaleResponsiveMenu({status}: {closed: MouseEventHandler, status: boolean}){
     const context = useToggleNavLink();

@@ -1,8 +1,9 @@
+import React from "react";
 import {TitleCard} from "../components";
 
 const Signin = () => {
     return (
-        <>
+        <div>
             <TitleCard title="Signin"/>
             <section className="z-20">
                 <div className="px-6 h-full text-gray-800">
@@ -113,11 +114,13 @@ const Signin = () => {
                                     Login
                                     </button>
                                     <p className="text-sm font-semibold mt-2 pt-1 mb-0 text-white">
-                                    Don't have an account ?
+                                        Don&lsquo;t have an account ?
                                         <a
                                             href="./"
                                             className="text-red-600 hover:text-red-700 focus:text-red-700 ml-5"
-                                        >Register</a
+                                        >
+                                            Register
+                                        </a
                                         >
                                     </p>
                                 </div>
@@ -126,7 +129,7 @@ const Signin = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 

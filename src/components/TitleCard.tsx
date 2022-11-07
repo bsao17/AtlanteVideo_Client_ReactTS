@@ -1,4 +1,4 @@
-
+import React from "react";
 const TitleCard = ({title}: {title: string}) => {
     return (
         <div>

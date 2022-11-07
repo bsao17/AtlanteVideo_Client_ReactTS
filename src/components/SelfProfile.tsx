@@ -1,3 +1,4 @@
+import React from "react";
 import profile from "../assets/profile.png";
 
 const SelfProfile = () => {

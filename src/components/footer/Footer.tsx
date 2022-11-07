@@ -1,3 +1,4 @@
+import React from "react";
 import sea_footer_image from "../../assets/Sea-footer-Image.png";
 import styles from "./footer.module.scss";
 import {FunctionComponent} from "react";
