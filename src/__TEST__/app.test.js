@@ -1,4 +1,9 @@
-import appAsync from "./mock/appAsymc";
+// Test d'une fonction asynchrone avec Jest.js (aucune correspondance avec l'application)
+function appAsync(callback){
+    setTimeout(()=>{
+        callback("{API: ok}");
+    }, 5000);
+}
 
 describe("test asynchronous function", ()=>{
     test("apiAsync function", (done)=>{

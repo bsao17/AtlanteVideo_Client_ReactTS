@@ -1,18 +1,17 @@
-import App from "../App";
 import {render, screen} from "@testing-library/react";
+import {Navigation} from "../components";
 
-describe("vérifier la présence des lien et leurs fonctionnement", () => {
-    beforeEach(()=>{
-        // eslint-disable-next-line testing-library/no-render-in-setup
-        render(<App/>);
-    });
+describe("vérifier la présence des liens et leur fonctionnement", () => {
     test("de la présence du lien accueil", () => {
-        expect(screen.getByText("Accueil")).toBeInTheDocument();
+        render(<Navigation/>);
+        const Links = screen.getByRole("Link");
+        expect(Links[0].textContent).toEqual("Accueil");
     });
     test("de la présence du lien service", () => {
-        expect(screen.getByText("Services & produits")).toBeInTheDocument();
+        expect(screen.getByText("Services & Produits")).toBeInTheDocument();
     });
-    test("de la présence du lien a propos", () => {
-        expect(screen.getByText("A propos")).toBeInTheDocument();
-    });
+    /* test("de la présence du lien a propos", () => {
+        const about = "A propos";
+        expect(screen.getByText(about).toBeInTheDocument();
+    });*/
 });
