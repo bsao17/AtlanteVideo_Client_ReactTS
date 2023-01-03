@@ -2,7 +2,6 @@ import React from "react";
 import {TitleCard, SetProfile} from "../components";
 import {FunctionComponent} from "react";
 
-
 const About: FunctionComponent = ()=>{
     return(
         <div>
