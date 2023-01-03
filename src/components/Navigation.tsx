@@ -1,11 +1,29 @@
-import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 const activeBouton = "text-center px-6 py-2.5 bg-neutral-900 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-neutral-900 ";
 const inactiveBouton = "text-center px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase";
 
 const Navigation: React.FC = () => {
     const [selected, setSelected] = useState<"home" | "service" | "about" | "signin">();
+    const location = useLocation();
+
+    useEffect(() => {
+        switch (location.pathname) {
+            case "/":
+                setSelected("home");
+                break;
+            case "/product":
+                setSelected("service");
+                break;
+            case "/about":
+                setSelected("about");
+                break;
+            case "/signin":
+                setSelected("signin");
+                break;
+        }
+    }, [location]);
 
     const handleFocusNavigation = (name: "home" | "service" | "about" | "signin") => {
         setSelected(name);
@@ -56,3 +74,4 @@ const Navigation: React.FC = () => {
 };
 
 export default Navigation;
+
