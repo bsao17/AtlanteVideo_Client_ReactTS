@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import {TitleCard} from "../components";
 
 const Signin = () => {
+    const[mail, setMail] = useState<string>();
+    const[password, setPassword] = useState<string>();
+    const refMail = useRef<HTMLInputElement>(null);
+    const refPassword = useRef<HTMLInputElement>(null);
+    function handleSubmit(){
+        setMail(refMail.current?.value);
+        setPassword(refPassword.current?.value)
+    }
+    console.log(mail, password);
     return (
         <div>
             <TitleCard title="Signin"/>
@@ -20,6 +29,8 @@ const Signin = () => {
                             />
                         </div>
                         <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
+
+                            {/* Form start */}
                             <form>
                                 <div className="flex flex-row items-center justify-center lg:justify-start">
                                     <p className="text-lg mb-0 mr-4 text-white ">Sign in with</p>
@@ -75,6 +86,7 @@ const Signin = () => {
 
                                 <div className="mb-6">
                                     <input
+                                        ref={refMail}
                                         type="text"
                                         className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                         id="exampleFormControlInput2"
@@ -83,7 +95,11 @@ const Signin = () => {
                                 </div>
 
                                 <div className="mb-6">
+
+
+                                    {/******************************/}
                                     <input
+                                        ref={refPassword}
                                         type="password"
                                         className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                         id="exampleFormControlInput2"
@@ -108,6 +124,9 @@ const Signin = () => {
 
                                 <div className="text-center lg:text-left">
                                     <button
+                                        onClick={()=>{
+                                            handleSubmit()
+                                        }}
                                         type="button"
                                         className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                                     >
@@ -125,6 +144,8 @@ const Signin = () => {
                                     </p>
                                 </div>
                             </form>
+                            {/* Form ended */}
+
                         </div>
                     </div>
                 </div>
