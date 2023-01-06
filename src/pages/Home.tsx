@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {TitleCard} from "../components";
 import home_presentation_anafi from "../assets/drone_anafi.png";
 import home_presentation_dji from "../assets/drone_dji.png";
+import Reason from "../components/reasons/Reason";
 
 function Home() {
     return (
@@ -26,6 +27,10 @@ function Home() {
                         </figcaption>
                         <img src={home_presentation_anafi} className=" sm:block md:block mt-9 pt-4  z-10" alt="logo"/>
                     </figure>
+                </div>
+
+                <div className="w-full">
+                    <Reason/>
                 </div>
 
                 <div className="mb-28 flex flex-col justify-center items-center">
