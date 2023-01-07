@@ -1,30 +1,28 @@
-import React, { useRef, useState} from "react";
-import { SwitchTransition, CSSTransition } from "react-transition-group";
-import styles from "./Reason.module.css";
+import React, { useRef, useState, useEffect } from "react";
+import "./Reason.css"
 
-const Reason: React.FC = () => {
+interface props {
+    reasons: string[]
+}
+
+const Reason: React.FC<props> = ({reasons}) => {
     const [reasonIndex, setReasonIndex] = useState(0);
-    const nodeRef = useRef(null)
-    const reasons = ["Mariage", "Evénement", "Entreprise", "Vacances", "CV", "Tutoriel", "Produit", "Association", "Publicité", "Clip"]
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setReasonIndex((reasonIndex + 1));
+        }, 4000);
+        return () => clearTimeout(timeoutId);
+    }, [reasonIndex, reasons.length]);
 
     return (
-        <SwitchTransition  mode='out-in'>
-            <CSSTransition
-                nodeRef={nodeRef}
-                timeout={4000}
-                classNames={styles.container}
-                onEntered={()=>{
-                    setInterval(()=>{
-                        setReasonIndex(reasonIndex + 1)
-                    }, 4000)
-                }}
-            >
+        <div>
+            <div className={"container"}>
                 <div>
-                    <div className={styles.text}>{reasons[reasonIndex]}</div>
+                    <div id="text" className={"text-enter-active"}>{reasons[reasonIndex]}</div>
                 </div>
-            </CSSTransition>
-        </SwitchTransition>
-
+            </div>
+        </div>
     );
 };
 

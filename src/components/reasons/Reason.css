@@ -1,3 +1,4 @@
+
 .container {
     width: 25%;
     height: 50%;
@@ -11,23 +12,17 @@
     z-index: 1000;
 }
 
-.text-enter {
-    color: white;
-    font-size: 32px;
-    text-align: center;
-}
-
 .text-enter-active {
-    animation: reasons 4s infinite;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive !important;
+    animation: reasonAnimation 4s infinite;
 }
 
 
-@keyframes reasons {
-    from {
-        scale: 0;
-        opacity: 0;
-    } to {
-    scale: 1;
-    opacity: 1;
-         }
+@keyframes reasonAnimation {
+    0% {scale: 0; opacity: 0}
+    85% {scale: 1; opacity: 1}
+    100% {scale: 2; opacity: 0}
 }
