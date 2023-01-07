@@ -6,6 +6,10 @@ import home_presentation_dji from "../assets/drone_dji.png";
 import Reason from "../components/reasons/Reason";
 
 function Home() {
+
+    const reasons = ["Mariage", "Evénement", "Entreprise", "Vacances", "CV", "Tutoriel", "Produit", "Association", "Publicité", "Clip"]
+
+
     return (
         <>
             <TitleCard title="Atlante-Video-Production"/>
@@ -30,7 +34,7 @@ function Home() {
                 </div>
 
                 <div className="w-full">
-                    <Reason/>
+                    <Reason reasons={reasons}/>
                 </div>
 
                 <div className="mb-28 flex flex-col justify-center items-center">

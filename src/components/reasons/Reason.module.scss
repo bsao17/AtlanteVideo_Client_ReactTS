@@ -11,14 +11,14 @@
     z-index: 1000;
 }
 
-.text-enter {
+.text.enter {
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-.text-enter-active {
-    animation: reasons 4s infinite;
+.text.enter-active {
+    animation: reasons 1s infinite;
 }
 
 
@@ -27,7 +27,7 @@
         scale: 0;
         opacity: 0;
     } to {
-    scale: 1;
-    opacity: 1;
-         }
+          scale: 1;
+          opacity: 1;
+      }
 }

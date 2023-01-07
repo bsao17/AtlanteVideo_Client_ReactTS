@@ -1,30 +1,37 @@
-import React, { useRef, useState} from "react";
-import { SwitchTransition, CSSTransition } from "react-transition-group";
-import styles from "./Reason.module.css";
+import React, { useRef, useState, useEffect } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import styles from "./Reason.module.scss";
 
-const Reason: React.FC = () => {
+interface props {
+    reasons: string[]
+}
+
+const Reason: React.FC<props> = ({reasons}) => {
     const [reasonIndex, setReasonIndex] = useState(0);
     const nodeRef = useRef(null)
-    const reasons = ["Mariage", "Evénement", "Entreprise", "Vacances", "CV", "Tutoriel", "Produit", "Association", "Publicité", "Clip"]
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setReasonIndex((reasonIndex + 1) % reasons.length);
+        }, 1000);
+        return () => clearTimeout(timeoutId);
+    }, [reasonIndex, reasons.length]);
 
     return (
-        <SwitchTransition  mode='out-in'>
+        <TransitionGroup>
             <CSSTransition
                 nodeRef={nodeRef}
-                timeout={4000}
-                classNames={styles.container}
-                onEntered={()=>{
-                    setInterval(()=>{
-                        setReasonIndex(reasonIndex + 1)
-                    }, 4000)
+                timeout={1000}
+                classNames={{
+                    enter: styles.textEnter,
+                    enterActive: styles.textEnterActive,
                 }}
             >
                 <div>
-                    <div className={styles.text}>{reasons[reasonIndex]}</div>
+                    <div className={styles.container}>{reasons[reasonIndex]}</div>
                 </div>
             </CSSTransition>
-        </SwitchTransition>
-
+        </TransitionGroup>
     );
 };
 
