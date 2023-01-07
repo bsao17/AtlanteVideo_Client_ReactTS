@@ -4,6 +4,7 @@ import {TitleCard} from "../components";
 import home_presentation_anafi from "../assets/drone_anafi.png";
 import home_presentation_dji from "../assets/drone_dji.png";
 import Reason from "../components/reasons/Reason";
+import "../index.css"
 
 function Home() {
 
@@ -33,7 +34,7 @@ function Home() {
                     </figure>
                 </div>
 
-                <div className="w-full">
+                <div id="reasonsStyle" className=" w-full text-white">
                     <Reason reasons={reasons}/>
                 </div>
 
