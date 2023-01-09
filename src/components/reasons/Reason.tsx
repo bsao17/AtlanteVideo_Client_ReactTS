@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Reason.css"
 
 interface props {
@@ -10,7 +10,7 @@ const Reason: React.FC<props> = ({reasons}) => {
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-            setReasonIndex((reasonIndex + 1));
+            setReasonIndex((reasonIndex + 1) % reasons.length);
         }, 4000);
         return () => clearTimeout(timeoutId);
     }, [reasonIndex, reasons.length]);
