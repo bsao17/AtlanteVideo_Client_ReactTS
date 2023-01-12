@@ -10,7 +10,7 @@ const Reason: React.FC<props> = ({reasons}) => {
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
-            setReasonIndex((reasonIndex + 1) % reasons.length);
+            setReasonIndex((reasonIndex + 1));
         }, 4000);
         return () => clearTimeout(timeoutId);
     }, [reasonIndex, reasons.length]);

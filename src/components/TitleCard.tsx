@@ -10,7 +10,7 @@ const TitleCard = ({title}: {title: string}) => {
             p-4
             border-b-4
             border-b-gray-500
-            bg-neutral-900
+            bg-neutral-800
             font-serif"
             >
                 {title}
