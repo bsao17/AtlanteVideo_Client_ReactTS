@@ -1,16 +1,16 @@
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-const activeBouton = "text-center px-6 py-2.5 bg-neutral-900 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-neutral-900 ";
+const activeBouton = "text-center px-6 py-2.5 bg-neutral-800 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-neutral-800 ";
 const inactiveBouton = "text-center px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase";
 
 const Navigation: React.FC = () => {
-    const [selected, setSelected] = useState<"home" | "service" | "about" | "signin">();
+    const [selected, setSelected] = useState< "home" | "service" | "about" | "signin">();
     const location = useLocation();
 
     useEffect(() => {
         switch (location.pathname) {
-            case "/":
+            case "/home":
                 setSelected("home");
                 break;
             case "/product":
@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
         <div className="w-full hidden sm:inline md:inline">
             <ul className="columns-4 flex flex-row justify-between md:justify-start text-blue-200">
                 <Link
-                    to="/"
+                    to="/home"
                     className={selected === "home" ? activeBouton : inactiveBouton}
                     onClick={() => {
                         handleFocusNavigation("home");
