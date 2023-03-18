@@ -1,5 +1,6 @@
 import React, {useRef, useState} from "react";
 import {TitleCard} from "../components";
+import connect from "../assets/connexion.png"
 
 const Signin = () => {
     const[mail, setMail] = useState<string>();
@@ -23,8 +24,8 @@ const Signin = () => {
                             className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0"
                         >
                             <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                                className="w-full"
+                                src={connect}
+                                className=" position-absolute my-4"
                                 alt="Sample"
                             />
                         </div>
