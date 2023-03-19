@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
 import {TitleCard} from "../components";
-import connect from "../assets/connexion.png"
+import connect from "../assets/images/connexion.png"
 
 const Signin = () => {
     const[mail, setMail] = useState<string>();

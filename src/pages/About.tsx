@@ -2,6 +2,7 @@ import React from "react";
 import {TitleCard, SetProfile} from "../components";
 import {FunctionComponent} from "react";
 import {Link} from "react-router-dom";
+import styles from "./style/about.module.css"
 
 
 const About: FunctionComponent = ()=>{
@@ -12,10 +13,10 @@ const About: FunctionComponent = ()=>{
                 <SetProfile/>
             </div>
              <div className="text-black bg-gray-300 mx-10 text-justify font-serif border border-2 border-white shadow shadow-5-strong rounded text-lg p-5">
-                Bienvenue chez <span className="font-bold text-2xl text-blue-900 bg-white rounded shadow p-2 italic">Atlante Création Numérique</span> (ACN),<br/><br/>
+                Bienvenue chez <span id={styles.title} className="font-bold text-2xl text-blue-900 bg-white rounded shadow p-2 italic">Atlante Création Numérique</span> (ACN),<br/><br/>
                  Là où l&lsquo;imagination prend vie et où vos idées se
                  transforment en réalités captivantes. <br/><br/>
-                 Nous sommes une entreprise de création multimédia et de développement web et informatique qui a pour vocation de fournir
+                 Nous sommes une entreprise de création multimédia et de développement web qui a pour vocation de fournir
                  des solutions innovantes, personnalisées et personnalisables afin de donner vie à vos projets. <br/><br/>
 
                 <span className="font-bold text-xl bg-white text-blue-800 rounded p-2 italic shadow ">Vous cherchez à captiver votre audience et à laisser une impression durable ?</span><br/><br/>
