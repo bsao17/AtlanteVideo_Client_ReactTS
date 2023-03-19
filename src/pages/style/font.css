@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Celticmd';
+    src: local('Celticmd'),
+    url('../../assets/font/celtic_md/celticmd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

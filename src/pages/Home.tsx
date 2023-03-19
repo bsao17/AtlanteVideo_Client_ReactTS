@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TitleCard } from "../components";
-import home_presentation_dji from "../assets/drone_dji.png";
-import pellicule from "../assets/pellicule2.png";
+import home_presentation_dji from "../assets/images/drone_dji.png";
+import pellicule from "../assets/images/pellicule2.png";
 import Reason from "../components/reasons/Reason";
 import "../index.css";
 
