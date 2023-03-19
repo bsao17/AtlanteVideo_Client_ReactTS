@@ -12,7 +12,7 @@ const About: FunctionComponent = ()=>{
             <div>
                 <SetProfile/>
             </div>
-             <div className="text-black bg-gray-300 mx-10 text-justify font-serif border border-2 border-white shadow shadow-5-strong rounded text-lg p-5">
+             <div className="text-black bg-gray-300 mx-10 text-justify font-serif border-2 border-white shadow shadow-5-strong rounded text-lg p-5">
                 Bienvenue chez <span id={styles.title} className="font-bold text-2xl text-blue-900 bg-white rounded shadow p-2 italic">Atlante Création Numérique</span> (ACN),<br/><br/>
                  Là où l&lsquo;imagination prend vie et où vos idées se
                  transforment en réalités captivantes. <br/><br/>
