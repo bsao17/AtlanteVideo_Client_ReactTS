@@ -7,7 +7,7 @@ import styles from "./style/about.module.css";
 const About: FunctionComponent = () => {
     return (
         <div className=" min-h-screen">
-            <TitleCard title={"Historique et projets d'Atlante-Production"} />
+            <TitleCard title={"A Propos de Nous"} />
             <div className="flex justify-center">
                 <SetProfile />
             </div>

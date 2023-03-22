@@ -66,7 +66,7 @@ const Navigation: React.FC = () => {
                         handleFocusNavigation("signin");
                     }}
                 >
-                    Signin
+                    Connexion
                 </Link>
             </ul>
         </div>
