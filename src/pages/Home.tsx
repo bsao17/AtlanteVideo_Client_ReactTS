@@ -44,7 +44,7 @@ function Home() {
               </figcaption>
               <img
                 src={home_presentation_dji}
-                className="md:block mt-9 pt-4  z-10"
+                className=" sm:block md:block mt-9 pt-4  z-10"
                 alt="logo"
               />
             </figure>

@@ -10,7 +10,7 @@ function VerticaleResponsiveMenu({status}: {closed: MouseEventHandler, status: b
     const context = useToggleNavLink();
     return (
         <div className={status ? visible : invisible}>
-            <Link className="my-2 hover:bg-gray-700 w-full mx-0" onClick={context.handleNavigationbar} to="/">Accueil</Link>
+            <Link className="my-2 hover:bg-gray-700 w-full mx-0" onClick={context.handleNavigationbar} to="/home">Accueil</Link>
             <Link className="my-2 hover:bg-gray-700 w-full" onClick={context.handleNavigationbar} to="/product">Services et Produits</Link>
             <Link className="my-2 hover:bg-gray-700 w-full" onClick={context.handleNavigationbar} to="/about">A propos</Link>
             <Link className="my-2 hover:bg-gray-700 w-full" onClick={context.handleNavigationbar} to="/signin">Connexion</Link>
