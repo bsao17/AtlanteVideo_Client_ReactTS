@@ -1,5 +1,11 @@
 
-.container {
+@media screen and (max-width: 400px) and (orientation: portrait) {
+    .container-reason {
+        position: relative !important;
+    }
+}
+
+.container-reason {
     width: 25%;
     height: 50%;
     display: flex;

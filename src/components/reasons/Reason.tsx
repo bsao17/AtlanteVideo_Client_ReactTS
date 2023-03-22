@@ -17,7 +17,7 @@ const Reason: React.FC<props> = ({reasons}) => {
 
     return (
         <div>
-            <div className={"container"}>
+            <div className="container-reason">
                 <div>
                     <div id="text" className={"text-enter-active"}>{reasons[reasonIndex]}</div>
                 </div>

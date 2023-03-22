@@ -4,7 +4,6 @@ import { TitleCard } from "../components";
 import home_presentation_dji from "../assets/images/drone_dji.png";
 import pellicule from "../assets/images/pellicule2.png";
 import Reason from "../components/reasons/Reason";
-import "../index.css";
 
 function Home() {
   const reasons = [
@@ -36,7 +35,7 @@ function Home() {
             rounded
             "
       >
-        <div className="cursor-pointer">
+        <div className="cursor-pointer z-40">
           <Link to="/video">
             <figure className="hover:opacity-50">
               <figcaption className=" flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">
@@ -51,7 +50,7 @@ function Home() {
           </Link>
         </div>
 
-        <div id="reasonsStyle" className=" w-full text-white">
+        <div id="reasonsStyle" className="z-0 w-full text-white z-0">
           <Reason reasons={reasons} />
         </div>
 
