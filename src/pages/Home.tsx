@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <>
-      <TitleCard title="Atlante-Video-Production" />
+      <TitleCard title="Atlante Création Numérique" />
       <div
         className="
             columns-2

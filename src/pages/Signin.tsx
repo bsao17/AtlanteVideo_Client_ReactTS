@@ -14,7 +14,7 @@ const Signin = () => {
     console.log(mail, password);
     return (
         <div>
-            <TitleCard title="Signin"/>
+            <TitleCard title="Connexion"/>
             <section className="z-20">
                 <div className="px-6 h-full text-gray-800">
                     <div
