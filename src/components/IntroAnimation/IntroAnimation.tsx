@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
-export const IntroAnimation: React.FunctionComponent = () => {
+export const IntroAnimation: React.FC = () => {
     return (
         <div>
 

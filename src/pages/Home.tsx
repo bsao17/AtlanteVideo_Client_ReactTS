@@ -36,8 +36,7 @@ function Home() {
             rounded
             "
       >
-        <div
-          className="cursor-pointer">
+        <div className="cursor-pointer">
           <Link to="/video">
             <figure className="hover:opacity-50">
               <figcaption className=" flex flex-col justify-center items-center text-2xl text-white p-3 border border-gray-200 rounded-full w-72 m-auto ">

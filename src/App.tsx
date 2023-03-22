@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useState} from "react";
+import React, {FunctionComponent} from "react";
 import {Route, Routes} from "react-router-dom";
 import {About, Home, Product, Signin, VideoGrid} from "./pages";
 import {Navigation, NavigationResponsive, VerticaleResponsiveMenu, Footer} from "./components";
@@ -9,11 +9,6 @@ import MotionDesign from './pages/MotionDesign';
 
 const App: FunctionComponent = () => {
     const context = useToggleNavLink();
-    const [select, setSelect] = useState("")
-
-    function newSelect(value: string){
-        return setSelect(value)
-    }
 
     return (
         <div className="App bg-neutral-700">
