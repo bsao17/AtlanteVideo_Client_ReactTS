@@ -8,7 +8,7 @@ const Footer: FunctionComponent = () => {
         <div className={styles.container}>
             <img className="w-full h-52 m-0 bottom-0" src={sea_footer_image} alt="sea footer"/>
             <div className="h-56" style={{backgroundColor: "#001B56"}}>
-                <div className="h-16 text-2xl font-serif flex justify-center items-center text-white">TITLE</div>
+                <div className="h-16 text-2xl font-serif flex justify-center items-center text-white">ACN</div>
                 <div className="columns-3 my-4">
                     <div className="h-full flex justify-center items-center text-white">
                         <ul>
