@@ -5,6 +5,12 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .container-reason {
+        position: relative !important;
+    }
+}
+
 .container-reason {
     width: 25%;
     height: 50%;
