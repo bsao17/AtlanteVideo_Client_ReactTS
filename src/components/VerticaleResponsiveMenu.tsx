@@ -9,7 +9,7 @@ const invisible = "invisible sm:hidden md:hidden flex flex-col p-5 absolute l-0 
 function VerticaleResponsiveMenu({status}: {closed: MouseEventHandler, status: boolean}){
     const context = useToggleNavLink();
     return (
-        <div className={status ? visible : invisible}>
+        <div style={{zIndex: "1000"}} className={status ? visible : invisible}>
             <Link className="my-2 hover:bg-gray-700 w-full mx-0" onClick={context.handleNavigationbar} to="/home">Accueil</Link>
             <Link className="my-2 hover:bg-gray-700 w-full" onClick={context.handleNavigationbar} to="/product">Services et Produits</Link>
             <Link className="my-2 hover:bg-gray-700 w-full" onClick={context.handleNavigationbar} to="/about">A propos</Link>
