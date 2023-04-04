@@ -27,7 +27,8 @@ const services = [
     {
         title: "Réalisation de vidéos",
         description:
-        "lorem 10"
+        "✅ Réalisation (minimum une demi journée) ✅ Post-production ✅ Retouches" +
+            "\n-> à partir de 450€ 1/2 journée"
     },
     {
         title: "Réalisation de site web et app-mobile",
