@@ -6,7 +6,6 @@ import {Telephone} from "../components/telephone";
 const Introduction: React.FC = () => {
     return (
             <div id={styles.animation}>
-                <Telephone/>
                 <IntroAnimation/>
             </div>
         )
