@@ -1,7 +1,6 @@
-import React from "react";
+import React, {FunctionComponent} from "react";
 import sea_footer_image from "../../assets/images/Sea-footer-Image.png";
 import styles from "./footer.module.scss";
-import {FunctionComponent} from "react";
 
 const Footer: FunctionComponent = () => {
     return (
