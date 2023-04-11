@@ -12,6 +12,14 @@ const VideoGrid: React.FC = () => {
 
     const videos: VideoItem[] = [
         {
+            url: "https://youtu.be/VwtgjyW36R0",
+            thumbnail: "https://img.youtube.com/vi/VwtgjyW36R0/maxresdefault.jpg"
+        },
+        {
+            url: "https://youtu.be/iEehqSCLyYE",
+            thumbnail: "https://img.youtube.com/vi/iEehqSCLyYE/maxresdefault.jpg",
+        },
+        {
             url: "https://www.youtube.com/watch?v=1sF1CZVQ8ts",
             thumbnail: "https://img.youtube.com/vi/1sF1CZVQ8ts/maxresdefault.jpg",
         },
@@ -24,17 +32,10 @@ const VideoGrid: React.FC = () => {
             thumbnail: "https://img.youtube.com/vi/CqfZ8_0wlRI/maxresdefault.jpg",
         },
         {
-            url: "https://youtu.be/ZTsj0m08oqY",
-            thumbnail: "https://img.youtube.com/vi/ZTsj0m08oqY/maxresdefault.jpg",
-        },
-        {
             url: "https://youtu.be/vdE7zrsUHQI",
             thumbnail: "https://img.youtube.com/vi/vdE7zrsUHQI/maxresdefault.jpg",
         },
-        {
-            url: "https://youtu.be/iEehqSCLyYE",
-            thumbnail: "https://img.youtube.com/vi/iEehqSCLyYE/maxresdefault.jpg",
-        },
+        
 
         // Ajoutez vos vidéos ici
     ];
