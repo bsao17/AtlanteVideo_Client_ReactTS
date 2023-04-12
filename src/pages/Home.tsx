@@ -16,12 +16,24 @@ function Home() {
     "Produit",
     "Association",
     "Publicité",
-    "Clip",
+    "Clip", 
   ];
-
+ 
   return (
     <>
       <TitleCard title="Atlante Création Numérique" />
+      <div id="reasonsStyle" className="z-0 w-full text-white z-0 mt-10">
+          <Reason reasons={reasons} />
+      </div>
+      <div className="text-center text-base md:text-lg lg:text-justify p-4 md:p-6 lg:pl-20 lg:pr-20 ml-4 md:ml-10 lg:ml-20 mr-4 md:mr-10 lg:mr-20 mt-5 bg-white rounded-xl">
+        <h3 className="text-center text-xl md:text-2xl lg:text-2xl mb-5">Votre partenaire pour des solutions numériques innovantes</h3>
+        Découvrez Atlante Création Numérique, 
+        votre développeur freelance expert en Python, JavaScript, Web et DevOps, pour des projets sur mesure. 
+        Je vous accompagne également dans la réalisation de contenus numériques captivants, 
+        tels que des vidéos et du motion design. 
+        Faites confiance à Atlante Création Numérique pour transformer vos idées en réalités numériques exceptionnelles.
+      </div>
+
       <div
         className="
             columns-2
@@ -50,9 +62,7 @@ function Home() {
           </Link>
         </div>
 
-        <div id="reasonsStyle" className="z-0 w-full text-white z-0">
-          <Reason reasons={reasons} />
-        </div>
+        
 
         <div className="mb-28 flex flex-col justify-center items-center"></div>
         <div className="col-span-2 flex justify-center rounded-full">

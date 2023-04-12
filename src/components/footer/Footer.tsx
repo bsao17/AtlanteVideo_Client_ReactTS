@@ -36,7 +36,7 @@ const Footer: FunctionComponent = () => {
                 </div>
                 <p className="font-light text-xs font-bold text-white text-center text-sm">
                     <span className="text-md-center"> © </span>
-                    2022 <strong className="font-light font-serif">Mehddeb Bruno. All rights reserved.</strong>
+                    2022 <strong className="font-light font-serif">ACN. All rights reserved.</strong>
                 </p>
             </div>
         </div>
