@@ -1,7 +1,6 @@
-import React from "react";
+import React, {FunctionComponent} from "react";
 import sea_footer_image from "../../assets/images/Sea-footer-Image.png";
 import styles from "./footer.module.scss";
-import {FunctionComponent} from "react";
 
 const Footer: FunctionComponent = () => {
     return (
@@ -37,7 +36,7 @@ const Footer: FunctionComponent = () => {
                 </div>
                 <p className="font-light text-xs font-bold text-white text-center text-sm">
                     <span className="text-md-center"> © </span>
-                    2022 <strong className="font-light font-serif">Mehddeb Bruno. All rights reserved.</strong>
+                    2022 <strong className="font-light font-serif">ACN. All rights reserved.</strong>
                 </p>
             </div>
         </div>
