@@ -13,8 +13,8 @@ const MotionDesign: React.FC = () => {
 
     const videos: VideoItem[] = [
         {
-            url: "https://www.youtube.com/watch?v=1sF1CZVQ8ts",
-            thumbnail: "https://img.youtube.com/vi/1sF1CZVQ8ts/maxresdefault.jpg",
+            url: "https://youtu.be/2u5jfCyoPYs",
+            thumbnail: "https://img.youtube.com/vi/2u5jfCyoPYs/maxresdefault.jpg",
         },
         {
             url: "https://youtu.be/mjolL7sx_Ps",

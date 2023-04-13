@@ -5,7 +5,7 @@ const activeBouton = "text-center px-6 py-2.5 bg-neutral-800 text-white font-med
 const inactiveBouton = "text-center px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase";
 
 const Navigation: React.FC = () => {
-    const [selected, setSelected] = useState< "home" | "service" | "about" | "signin">();
+    const [selected, setSelected] = useState< "home" | "service" | "about" | "contact">();
     const location = useLocation();
 
     useEffect(() => {
@@ -19,13 +19,13 @@ const Navigation: React.FC = () => {
             case "/about":
                 setSelected("about");
                 break;
-            case "/signin":
-                setSelected("signin");
+            case "/Contact":
+                setSelected("contact");
                 break;
         }
     }, [location]);
 
-    const handleFocusNavigation = (name: "home" | "service" | "about" | "signin") => {
+    const handleFocusNavigation = (name: "home" | "service" | "about" | "contact") => {
         setSelected(name);
     };
 
@@ -60,13 +60,13 @@ const Navigation: React.FC = () => {
                     A propos
                 </Link>
                 <Link
-                    to="/signin"
-                    className={selected === "signin" ? activeBouton : inactiveBouton}
+                    to="/Contact"
+                    className={selected === "contact" ? activeBouton : inactiveBouton}
                     onClick={() => {
-                        handleFocusNavigation("signin");
+                        handleFocusNavigation("contact");
                     }}
                 >
-                    Connexion
+                    Contact
                 </Link>
             </ul>
         </div>

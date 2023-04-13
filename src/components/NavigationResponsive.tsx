@@ -1,5 +1,4 @@
-import React from "react";
-import {MouseEventHandler} from "react";
+import React, {MouseEventHandler} from "react";
 
 type props = {
     handleNavigationBar: MouseEventHandler
