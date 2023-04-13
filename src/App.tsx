@@ -1,10 +1,11 @@
 import React, {FunctionComponent} from "react";
 import {Route, Routes} from "react-router-dom";
-import {About, Home, Product, Signin, VideoGrid} from "./pages";
+import {About, Home, Product, VideoGrid} from "./pages";
 import {Navigation, NavigationResponsive, VerticaleResponsiveMenu, Footer} from "./components";
 import useToggleNavLink from "./hook/useToggleNavLink";
 import Introduction from "./pages/Introduction";
 import MotionDesign from './pages/MotionDesign';
+import Contact from "./pages/Contact";
 
 
 const App: FunctionComponent = () => {
@@ -21,7 +22,7 @@ const App: FunctionComponent = () => {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/product" element={<Product/>}/>
                 <Route path="/video" element={<VideoGrid/>}/>
-                <Route path="/signin" element={<Signin/>}/>
+                <Route path="/contact" element={<Contact/>}/>
                 <Route path="/motion" element={<MotionDesign/>}/>
             </Routes>
             <Footer/>
