@@ -27,7 +27,7 @@ function Home() {
       </div>
       <div className="
       text-center
-      text-white
+
       text-base
       md:text-lg
       lg:text-justify
@@ -45,8 +45,10 @@ function Home() {
       shadow-6-strongB
       border
       border-gray-500
-      rounded-xl">
-        <h3 className="text-center text-xl md:text-2xl lg:text-2xl mb-5">Votre partenaire pour des solutions numériques innovantes</h3>
+      rounded-xl
+      bg-gradient-to-b from-blue-500 to-blue-900 via-blue-200"
+           style={{textShadow: "1px 1px 2px white"}}>
+        <h3 className="text-center text-white text-xl md:text-2xl lg:text-2xl mb-5" style={{textShadow: "1px 1px 2px black"}}>Votre partenaire pour des solutions numériques innovantes</h3>
         Découvrez Atlante Création Numérique, 
         votre développeur freelance expert en Python, JavaScript, Web et DevOps, pour des projets sur mesure. 
         Je vous accompagne également dans la réalisation de contenus numériques captivants, 
