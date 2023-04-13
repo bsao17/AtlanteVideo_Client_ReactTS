@@ -30,7 +30,6 @@ const Signin = () => {
                             />
                         </div>
                         <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
-
                             {/* Form start */}
                             <form>
                                 <div className="flex flex-row items-center justify-center lg:justify-start">
@@ -41,7 +40,6 @@ const Signin = () => {
                                         data-mdb-ripple-color="light"
                                         className="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
                                     >
-
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-4 h-4">
                                             <path
                                                 fill="currentColor"
@@ -96,7 +94,6 @@ const Signin = () => {
                                 </div>
 
                                 <div className="mb-6">
-
 
                                     {/******************************/}
                                     <input

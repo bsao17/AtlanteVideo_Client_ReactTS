@@ -18,14 +18,15 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
 }
 
 .text-enter-active {
-    color: white;
+    color: #4780B7;
+    text-shadow: 1px 1px 1px white;
     font-size: 45px;
     text-align: center;
     font-family: 'Permanent Marker', cursive !important;

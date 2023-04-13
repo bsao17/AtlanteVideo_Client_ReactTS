@@ -22,7 +22,7 @@ function Home() {
   return (
     <>
       <TitleCard title="Atlante Création Numérique" />
-      <div id="reasonsStyle" className="z-0 w-full text-white z-0 mt-10">
+      <div id="reasonsStyle" className="z-0 w-full z-0 mt-10">
           <Reason reasons={reasons} />
       </div>
       <div className="text-center text-base md:text-lg lg:text-justify p-4 md:p-6 lg:pl-20 lg:pr-20 ml-4 md:ml-10 lg:ml-20 mr-4 md:mr-10 lg:mr-20 mt-5 bg-white rounded-xl">
