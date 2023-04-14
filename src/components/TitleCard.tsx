@@ -12,13 +12,18 @@ const TitleCard = ({title}: {title: string}) => {
             items-center
             text-white
             p-4
-            border-b-4
-            border-b-gray-500
+
+
             bg-neutral-800
             font-serif"
             style={{backgroundColor: "#232324"}}>
                 <img className="absolute right-0 rounded-full mx-10" src={boule} alt="logo boule" width={90}/>
-                {title}
+                <span>
+                    {title}
+                    <div className=" w-24 rounded ml-3 mt-2" style={{backgroundColor: "#457BB1", height: "2px"}}></div>
+                    <div className=" w-20 rounded ml-10 mt-1" style={{backgroundColor: "#095dad", height: "1px"}}></div>
+                    <div className=" w-24 rounded ml-1 mt-1" style={{backgroundColor: "#457BB1", height: "2px"}}></div>
+                </span>
             </h1>
         </div>
     );
