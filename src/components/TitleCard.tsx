@@ -1,5 +1,5 @@
 import React from "react";
-import boule from "../assets/gif/ThreeRoundVideo.gif"
+import boule from "../assets/gif/LogoSite.gif"
 
 const TitleCard = ({title}: {title: string}) => {
     return (
