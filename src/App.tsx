@@ -13,7 +13,7 @@ const App: FunctionComponent = () => {
     const context = useToggleNavLink();
 
     return (
-        <div className="App bg-neutral-700">
+        <div className="App" style={{backgroundColor: "#0E0C0D"}}>
             <div className="
       w-full
       text-center
@@ -29,7 +29,7 @@ const App: FunctionComponent = () => {
       "
                  style={{ backgroundImage: `url(${screen_working_background})`}}>
                 <h3 className="text-center text-white text-xl md:text-2xl lg:text-2xl mb-5">
-                    Votre partenaire pour des solutions numériques innovantes</h3>
+                    A.C.N, pour des solutions numériques innovantes</h3>
             </div>
             <NavigationResponsive handleNavigationBar={context.handleNavigationbar}/>
             <VerticaleResponsiveMenu closed={context.handleNavigationbar} status={context.toggleNavigation}/>

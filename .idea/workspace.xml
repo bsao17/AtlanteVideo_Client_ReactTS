@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update background About.tsx and App.tsx" />
+    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update background About.tsx and App.tsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,21 +228,7 @@
       <workItem from="1681207091596" duration="1745000" />
       <workItem from="1681374834084" duration="20622000" />
       <workItem from="1681493168104" duration="475000" />
-      <workItem from="1681493847132" duration="1700000" />
-    </task>
-    <task id="LOCAL-00015" summary="fix: ESlint fixer and clean code">
-      <created>1666592893378</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1666592893378</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fix: ESlint fix all">
-      <created>1666593259931</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1666593259931</updated>
+      <workItem from="1681493847132" duration="2825000" />
     </task>
     <task id="LOCAL-00017" summary="feat: link video example">
       <created>1667286422952</created>
@@ -570,7 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681495042219</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="feat: update background About.tsx and App.tsx">
+      <created>1681495570264</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1681495570264</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feat: update background About.tsx and App.tsx">
+      <created>1681495734523</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681495734523</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
