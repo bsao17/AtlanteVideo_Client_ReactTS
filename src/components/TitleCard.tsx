@@ -16,8 +16,8 @@ const TitleCard = ({title}: {title: string}) => {
             border-b-gray-500
             bg-neutral-800
             font-serif"
-            >
-                <img className="absolute right-0 rounded-full mx-10 border border-gray-500" src={boule} alt="logo boule" width={90}/>
+            style={{backgroundColor: "#232324"}}>
+                <img className="absolute right-0 rounded-full mx-10" src={boule} alt="logo boule" width={90}/>
                 {title}
             </h1>
         </div>
