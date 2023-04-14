@@ -6,6 +6,7 @@ import useToggleNavLink from "./hook/useToggleNavLink";
 import Introduction from "./pages/Introduction";
 import MotionDesign from './pages/MotionDesign';
 import Contact from "./pages/Contact";
+import screen_working_background from "./assets/images/screenWorking.jpg";
 
 
 const App: FunctionComponent = () => {
@@ -13,6 +14,23 @@ const App: FunctionComponent = () => {
 
     return (
         <div className="App bg-neutral-700">
+            <div className="
+      w-full
+      text-center
+      text-base
+      md:text-lg
+      lg:text-justify
+      p-4
+      md:p-6
+      lg:pl-5
+      lg:pr-5
+      text-white
+      opacity-90
+      "
+                 style={{ backgroundImage: `url(${screen_working_background})`}}>
+                <h3 className="text-center text-white text-xl md:text-2xl lg:text-2xl mb-5">
+                    Votre partenaire pour des solutions numériques innovantes</h3>
+            </div>
             <NavigationResponsive handleNavigationBar={context.handleNavigationbar}/>
             <VerticaleResponsiveMenu closed={context.handleNavigationbar} status={context.toggleNavigation}/>
             <Navigation />
