@@ -1,8 +1,8 @@
-import React from "react";
-import { TitleCard, SetProfile } from "../components";
-import { FunctionComponent } from "react";
+import React, {FunctionComponent} from "react";
+import {TitleCard, SetProfile} from "../components";
 import { Link } from "react-router-dom";
 import styles from "./style/about.module.css";
+import backgroundImage from "../assets/Background/pattern.png"
 
 const About: FunctionComponent = () => {
     return (
@@ -11,7 +11,10 @@ const About: FunctionComponent = () => {
             <div className="flex justify-center">
                 <SetProfile />
             </div>
-            <div className="mx-10 my-10 p-6 md:p-10 bg-white rounded-lg shadow-lg text-justify font-serif text-lg leading-relaxed">
+            <div
+                className="mx-10 my-10 p-6 md:p-10 rounded-lg shadow-6-strongB text-justify font-serif text-lg leading-relaxed"
+                style={{backgroundImage: `url(${backgroundImage})`}}
+            >
                 <h2 className={`${styles.title} font-bold text-3xl text-blue-900 mb-6 italic`}>
                     Atlante Création Numérique
                 </h2>

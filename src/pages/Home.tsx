@@ -22,39 +22,10 @@ function Home() {
   return (
     <>
       <TitleCard title="Atlante Création Numérique" />
-      <div id="reasonsStyle" className="z-0 w-full z-0 mt-10">
+      <div id="reasonsStyle" className="z-0 w-full z-0 mt-10 hidden md:block">
           <Reason reasons={reasons} />
       </div>
-      <div className="
-      text-center
 
-      text-base
-      md:text-lg
-      lg:text-justify
-      p-4
-      md:p-6
-      lg:pl-20
-      lg:pr-20
-      ml-4
-      md:ml-10
-      lg:ml-20
-      mr-4
-      md:mr-10
-      lg:mr-20
-      mt-5
-      shadow-6-strongB
-      border
-      border-gray-500
-      rounded-xl
-      bg-gradient-to-b from-blue-500 to-blue-900 via-blue-200"
-           style={{textShadow: "1px 1px 2px white"}}>
-        <h3 className="text-center text-white text-xl md:text-2xl lg:text-2xl mb-5" style={{textShadow: "1px 1px 2px black"}}>Votre partenaire pour des solutions numériques innovantes</h3>
-        Découvrez Atlante Création Numérique, 
-        votre développeur freelance expert en Python, JavaScript, Web et DevOps, pour des projets sur mesure. 
-        Je vous accompagne également dans la réalisation de contenus numériques captivants, 
-        tels que des vidéos et du motion design. 
-        Faites confiance à Atlante Création Numérique pour transformer vos idées en réalités numériques exceptionnelles.
-      </div>
 
       <div
         className="
