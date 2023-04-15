@@ -7,7 +7,7 @@ import backgroundImage from "../assets/Background/pattern.png"
 const About: FunctionComponent = () => {
     return (
         <div className=" min-h-screen">
-            <TitleCard title={"A Propos de Nous"} />
+            <TitleCard title={"A Propos"} />
             <div className="flex justify-center">
                 <SetProfile />
             </div>

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update global background color">
+    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update TitleCard.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TitleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TitleCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,14 +231,7 @@
       <workItem from="1681207091596" duration="1745000" />
       <workItem from="1681374834084" duration="20622000" />
       <workItem from="1681493168104" duration="475000" />
-      <workItem from="1681493847132" duration="4953000" />
-    </task>
-    <task id="LOCAL-00018" summary="feat: responsive navigation three lines">
-      <created>1667288574890</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1667288574890</updated>
+      <workItem from="1681493847132" duration="6093000" />
     </task>
     <task id="LOCAL-00019" summary="feat: redirection to YouTube Channel">
       <created>1667293010979</created>
@@ -573,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681497378228</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="feat: update TitleCard.tsx">
+      <created>1681500649520</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1681500649520</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: react-transition-group for home animation" />
     <MESSAGE value="feat: refactoring Reason.tsx" />
     <MESSAGE value="fix: animation Reason.css" />
     <MESSAGE value="feat: loop animation with setTimeout-modulo and useEffect" />
@@ -617,6 +619,7 @@
     <MESSAGE value="feat: update background About.tsx" />
     <MESSAGE value="feat: update background About.tsx and App.tsx" />
     <MESSAGE value="feat: update global background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update global background color" />
+    <MESSAGE value="feat: update TitleCard.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update TitleCard.tsx" />
   </component>
 </project>
