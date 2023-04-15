@@ -48,7 +48,7 @@ const Navigation: React.FC = () => {
                         handleFocusNavigation("service");
                     }}
                 >
-                    Produits et Services
+                    Nos Prestations
                 </Link>
                 <Link
                     to="/about"

@@ -28,7 +28,7 @@ const App: FunctionComponent = () => {
       opacity-90
       "
                  style={{ backgroundImage: `url(${screen_working_background})`}}>
-                <h3 className="text-center text-white text-xl md:text-2xl lg:text-2xl mb-5">
+                <h3 className="text-center text-white text-xl md:text-2xl lg:text-3xl mb-5 opacity-60">
                     A.C.N, pour des solutions numériques innovantes</h3>
             </div>
             <NavigationResponsive handleNavigationBar={context.handleNavigationbar}/>
