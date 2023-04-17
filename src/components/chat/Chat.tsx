@@ -21,11 +21,11 @@ export default  function Chat(){
         setSocket(socket)
 
         socket.on( "basicEmit", (id, message)=>{
-            setMessages(()=>[...prevMessages, message ])
+            /*setMessages(()=>[...prevMessages, message ])*/
         })
     }, [])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
         if (socket) {
             socket.emit("message", message);

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update add underline in TitleCard.tsx">
-      <change afterPath="$PROJECT_DIR$/src/components/chat/Chat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TitleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TitleCard.tsx" afterDir="false" />
+    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: create chat in real time with socket">
+      <change beforePath="$PROJECT_DIR$/src/components/chat/Chat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/chat/Chat.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,14 +228,7 @@
       <workItem from="1681374834084" duration="20622000" />
       <workItem from="1681493168104" duration="475000" />
       <workItem from="1681493847132" duration="7569000" />
-      <workItem from="1681620924310" duration="5777000" />
-    </task>
-    <task id="LOCAL-00020" summary="feat: responsive menu ok">
-      <created>1667300751569</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1667300751569</updated>
+      <workItem from="1681620924310" duration="6256000" />
     </task>
     <task id="LOCAL-00021" summary="fix: add missing login link">
       <created>1667301071419</created>
@@ -577,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681544755979</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="feat: create chat in real time with socket">
+      <created>1681761018621</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1681761018621</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix: animation Reason.css" />
     <MESSAGE value="feat: loop animation with setTimeout-modulo and useEffect" />
     <MESSAGE value="feat: add text and animation/images" />
     <MESSAGE value="feat: download and add celticmd.ttf font" />
@@ -621,6 +616,7 @@
     <MESSAGE value="feat: update global background color" />
     <MESSAGE value="feat: update TitleCard.tsx" />
     <MESSAGE value="feat: update add underline in TitleCard.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update add underline in TitleCard.tsx" />
+    <MESSAGE value="feat: create chat in real time with socket" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create chat in real time with socket" />
   </component>
 </project>
