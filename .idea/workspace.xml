@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update TitleCard.tsx">
+    <list default="true" id="589eb47c-6d17-4550-9d86-3eee408c0eb3" name="Changes" comment="feat: update add underline in TitleCard.tsx">
+      <change afterPath="$PROJECT_DIR$/src/components/chat/Chat.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TitleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TitleCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +22,9 @@
         <option value="TypeScript File" />
         <option value="Sass File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -231,14 +231,8 @@
       <workItem from="1681207091596" duration="1745000" />
       <workItem from="1681374834084" duration="20622000" />
       <workItem from="1681493168104" duration="475000" />
-      <workItem from="1681493847132" duration="6093000" />
-    </task>
-    <task id="LOCAL-00019" summary="feat: redirection to YouTube Channel">
-      <created>1667293010979</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1667293010979</updated>
+      <workItem from="1681493847132" duration="7569000" />
+      <workItem from="1681620924310" duration="5777000" />
     </task>
     <task id="LOCAL-00020" summary="feat: responsive menu ok">
       <created>1667300751569</created>
@@ -576,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681500649520</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="feat: update add underline in TitleCard.tsx">
+      <created>1681544755979</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681544755979</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: refactoring Reason.tsx" />
     <MESSAGE value="fix: animation Reason.css" />
     <MESSAGE value="feat: loop animation with setTimeout-modulo and useEffect" />
     <MESSAGE value="feat: add text and animation/images" />
@@ -620,6 +620,7 @@
     <MESSAGE value="feat: update background About.tsx and App.tsx" />
     <MESSAGE value="feat: update global background color" />
     <MESSAGE value="feat: update TitleCard.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update TitleCard.tsx" />
+    <MESSAGE value="feat: update add underline in TitleCard.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update add underline in TitleCard.tsx" />
   </component>
 </project>
