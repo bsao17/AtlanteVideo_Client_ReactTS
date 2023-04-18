@@ -1,0 +1,24 @@
+.container {
+  position: fixed;
+  width: 380px;
+  height: 480px;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
+  border-radius: 20px;
+  padding: 10px;
+
+  .sousContainer {
+    width: auto ;
+    border: solid 5px blue;
+    border-radius: 20px;
+    padding: 20px ;
+    background-color: #fff;
+  }
+}

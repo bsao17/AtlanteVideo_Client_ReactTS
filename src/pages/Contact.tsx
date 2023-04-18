@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { TitleCard } from "../components";
 import connect from "../assets/images/connexion.png";
+import Chat from "../components/chat/Chat";
 
 const Contact = () => {
     const [name, setName] = useState<string>();
@@ -76,6 +77,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            <Chat/>
         </div>
     );
 };

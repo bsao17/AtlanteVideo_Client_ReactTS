@@ -4,6 +4,7 @@ import { TitleCard } from "../components";
 import home_presentation_dji from "../assets/images/drone_dji.png";
 import pellicule from "../assets/images/pellicule2.png";
 import Reason from "../components/reasons/Reason";
+import Chat from "../components/chat/Chat";
 
 function Home() {
   const reasons = [
